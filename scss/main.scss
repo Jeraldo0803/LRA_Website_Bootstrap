@@ -1,0 +1,42 @@
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+// Body
+$body-bg: #f8fafc;
+
+// Typography
+$font-family-sans-serif: 'Source Sans Pro';
+//$font-size-base: 0.9rem;
+//$line-height-base: 1.6;
+
+
+// Override color scheme
+
+$theme-colors: (
+    "primary": #3572EF,
+    "secondary": #3ABEF9,
+    "tertiary": #A7E6FF,
+
+
+    "success": #198754,
+    "danger": #dc3545,
+    "warning": #ffc107,
+    "info": #0dcaf0,
+    "light": #f8f9fa,
+    "dark": #212529,
+);
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+
+.custom-btn {
+    background-color: #3ABEF9;
+  }
+
+.custom-btn:hover {
+    background-color: #3572EF;
+  }
+
