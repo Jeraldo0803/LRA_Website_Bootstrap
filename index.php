@@ -5,6 +5,7 @@ switch ($request) {
 
     case '':
     case '/':
+    case '/home';
     case '/index.php':
         require __DIR__ . '/views/home.php';
         break;
@@ -35,6 +36,10 @@ switch ($request) {
 
     case '/about':
         require __DIR__ . '/views/about.php';
+        break;
+
+    case '/home_cn':
+        require __DIR__ . '/views_cn/home_cn.php';
         break;
 
     default:
