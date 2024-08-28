@@ -38,6 +38,10 @@ switch ($request) {
         require __DIR__ . '/views/about.php';
         break;
 
+    case '/contact':
+        require __DIR__ . '/views/contact.php';
+        break;
+
     case '/home_cn':
         require __DIR__ . '/views_cn/home_cn.php';
         break;
