@@ -1,3 +1,7 @@
+<?php
+include $_SERVER['DOCUMENT_ROOT'] . "\backend\lang_config.php";
+?>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,15 +18,17 @@
             <div class="fw-bolder" style="padding: 0 0.5rem;">282425536</div>
             <div class="fw-bolder">
                 <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        English
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="languageDropdown">
-                        <li><a class="dropdown-item" href="#">English</a></li>
-                        <li><a class="dropdown-item" href="#">简体中文</a></li>
-                        <li><a class="dropdown-item" href="#">繁體中文</a></li>
-                    </ul>
+                    <form name="languageSelect" action="" method="get">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            English
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">简体中文</a></li>
+                            <li><a class="dropdown-item" href="#">繁體中文</a></li>
+                        </ul>
+                    </form>
                 </div>
             </div>
         </div>
@@ -43,7 +49,8 @@
                 <ul class="navbar-nav mx-auto ps-5 w-100 d-flex justify-content-around">
 
                     <li class="nav-item">
-                        <a class="nav-link text-black fw-bolder" href="/facilities">Facilities</a>
+                        <a class="nav-link text-black fw-bolder"
+                            href="/facilities"><?php echo $lang["nav_facilities"]; ?></a>
                     </li>
 
                     <li class="nav-item">
