@@ -1,5 +1,5 @@
 <?php
-include $_SERVER['DOCUMENT_ROOT'] . "\backend\lang_config.php";
+include $_SERVER['DOCUMENT_ROOT'] . "\backend\lang.php";
 ?>
 
 <head>
@@ -18,17 +18,15 @@ include $_SERVER['DOCUMENT_ROOT'] . "\backend\lang_config.php";
             <div class="fw-bolder" style="padding: 0 0.5rem;">282425536</div>
             <div class="fw-bolder">
                 <div class="dropdown">
-                    <form name="languageSelect" action="" method="get">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            English
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
-                            <li><a class="dropdown-item" href="#">English</a></li>
-                            <li><a class="dropdown-item" href="#">简体中文</a></li>
-                            <li><a class="dropdown-item" href="#">繁體中文</a></li>
-                        </ul>
-                    </form>
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <?php echo $lang["nav_language"]; ?>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                        <li><a class="dropdown-item" href="?lang=en">English</a></li>
+                        <li><a class="dropdown-item" href="?lang=zh_CN">简体中文</a></li>
+                        <li><a class="dropdown-item" href="?lang=zh_TW">繁體中文</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -36,7 +34,7 @@ include $_SERVER['DOCUMENT_ROOT'] . "\backend\lang_config.php";
 
     <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
         <div class="container py-1">
-            <a class="navbar-brand" href="/">
+            <a class="navbar-brand" href="/views/home.php">
                 <img src="../../assets/img/lrabrand.png" alt="LRA Brand Logo" style="width: 300px">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -50,31 +48,36 @@ include $_SERVER['DOCUMENT_ROOT'] . "\backend\lang_config.php";
 
                     <li class="nav-item">
                         <a class="nav-link text-black fw-bolder"
-                            href="/facilities"><?php echo $lang["nav_facilities"]; ?></a>
+                            href="/views/facilities.php"><?php echo $lang["nav_facilities"]; ?></a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link text-black fw-bolder" href="/admissions">Admissions</a>
+                        <a class="nav-link text-black fw-bolder"
+                            href="/views/admissions.php"><?php echo $lang["nav_admissions"]; ?></a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link text-black fw-bolder" href="/faculty">Faculty</a>
+                        <a class="nav-link text-black fw-bolder"
+                            href="/views/faculty.php"><?php echo $lang["nav_faculty"]; ?></a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link text-black fw-bolder" href="/alumni">Alumni</a>
+                        <a class="nav-link text-black fw-bolder"
+                            href="/views/alumni.php"><?php echo $lang["nav_alumni"]; ?></a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link text-black fw-bolder" href="/history">History</a>
+                        <a class="nav-link text-black fw-bolder"
+                            href="/views/history.php"><?php echo $lang["nav_history"]; ?></a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link text-black fw-bolder" href="/about">About</a>
+                        <a class="nav-link text-black fw-bolder"
+                            href="/views/about.php"><?php echo $lang["nav_about"]; ?></a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link btn custom-btn text-white" href="#">Apply Now</a>
+                        <a class="nav-link btn custom-btn text-white" href="#"><?php echo $lang["nav_applynow"]; ?></a>
                     </li>
                 </ul>
             </div>

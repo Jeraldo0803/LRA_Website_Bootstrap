@@ -1,7 +1,8 @@
 <?php
 
 $lang = array(
-    "nav_facilities" => "FJAOIFJ",
+    "nav_language" => "English",
+    "nav_facilities" => "Facilities",
     "nav_admissions" => "Admissions",
     "nav_faculty" => "Faculty",
     "nav_alumni" => "Alumni",

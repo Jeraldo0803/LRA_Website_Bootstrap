@@ -1,6 +1,7 @@
 <?php
 
 $lang = array(
+    "nav_language" => "简体中文",
     "nav_facilities" => "设施",
     "nav_admissions" => "入学",
     "nav_faculty" => "教员",
