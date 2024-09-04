@@ -17,11 +17,17 @@ $request = $_SERVER['REQUEST_URI'];
 
     <div class="bg-secondary d-flex justify-content-center align-items-center">
         <div class="container d-flex justify-content-between align-items-center">
-            <div class="fw-bolder" style="padding: 0 0.5rem;">282425536</div>
+            <div class="fw-bolder" style="padding: 0 0.5rem;">
+                <img style="width:15px; height:15px;" src="./../assets/icon/phone-504.svg" alt="">
+                282425536
+            </div>
             <div class="fw-bolder">
+
                 <div class="dropdown">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown"
                         data-bs-toggle="dropdown" aria-expanded="false">
+                        <img class="ml-2" style="width:25px; height:25px;" src="./../assets/icon/language-icon.svg"
+                            alt="">
                         <?php echo $lang["nav_language"]; ?>
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="languageDropdown">
