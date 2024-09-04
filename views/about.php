@@ -47,11 +47,11 @@
         <p>
             <?php echo $lang["mission_description1"]; ?>
             <br>
-            <?php echo "<div class= 'fw-bolder'>" . $lang["mission_description2_bold"] . "" . "</div>" . $lang["mission_description2"]; ?>
+            <?php echo $lang["mission_description2"]; ?>
             <br><br>
-            <?php echo "<div class= 'fw-bolder'>" . $lang["mission_description3_bold"] . "" . "</div>" . $lang["mission_description3"]; ?>
+            <?php echo $lang["mission_description3"]; ?>
             <br><br>
-            <?php echo "<div class= 'fw-bolder'>" . $lang["mission_description4_bold"] . "" . "</div>" . $lang["mission_description4"]; ?>
+            <?php echo $lang["mission_description4"]; ?>
             <br>
         </p>
     </div>
