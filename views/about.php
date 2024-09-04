@@ -5,42 +5,60 @@
 <?php include $_SERVER['DOCUMENT_ROOT'] . '\views\templates\header.php'; ?>
 
 <body>
+    <div class="container">
+        <div class="mt-3 d-flex flex-row container text-center justify-content-around">
 
-    <div class="row no-gutters">
-        <div class="col">
-            <div class="card">
-                <img class="card-img img-fluid" style="object-fit: cover; box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5  );" 
-                src="../assets/img/2nd-page.jpg" alt="">
-                <div class="card-img-overlay d-flex flex-column justify-content-center">
-                    <div class="container text-center text-white">
-                        <h2>謙虛<br>Loyalty</h2>
-
-
-                        <br><h2>忠誠<br>Humility</h2>
-
-                        
-                        <br><h2>仁愛<br>Benevolence</h2>
-                    </div>
-                </div>
+            <div>
+                <h1 class="fw-bolder">謙虛</h1>
+                <h5>Loyalty</h5>
             </div>
+
+            <div>
+                <h1 class="fw-bolder">忠誠</h1>
+                <h5>Humility</h5>
+            </div>
+
+            <div>
+                <h1 class="fw-bolder">仁愛</h1>
+                <h5>Benevolence</h5>
+            </div>
+
         </div>
-        <div class="col">
-            <div class="card">
-                <img class="card-img img-fluid" src="../assets/img/2nd-page-2.jpg" alt="">
-                <div class="card-img-overlay d-flex flex-column justify-content-center">
-                    <div class="container bg-black text-center text-white">
-                        <h2>Mission</h2>
-                        <br>
-                        <p><bold class="fw-bolder">LORENZO RUIZ ACADEMY</bold> is a highly recognized Filipino-Chinese Dominican School 
-                            deeply dedicated to the wholesome formation of every student through formal and 
-                            innovative education that fosters a higher sense of responsibility, discipline, humility, loyalty, 
-                            and excellence among the members of its community, as inspired by its patron - Saint Lorenzo Ruiz.</p>
-                    </div>
+
+        <div class="row no-gutters">
+            <div class="col">
+                <h2 class="fw-bolder"><?php echo $lang["vision"]; ?></h2>
+                <br>
+                <p>
+                    <bold class="fw-bolder"><?php echo $lang["LRA"]; ?></bold>
+                    <?php echo $lang["vision_description"]; ?>
+                </p>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img class="card-img img-fluid" src="../assets/img/2nd-page-2.jpg" alt="">
                 </div>
             </div>
         </div>
     </div>
 
+    <div class="container">
+        <h2 class="fw-bolder"><?php echo $lang["mission"]; ?></h2>
+        <p>
+            <?php echo $lang["mission_description1"]; ?>
+            <br>
+            <?php echo "<div class= 'fw-bolder'>" . $lang["mission_description2_bold"] . "" . "</div>" . $lang["mission_description2"]; ?>
+            <br><br>
+            <?php echo "<div class= 'fw-bolder'>" . $lang["mission_description3_bold"] . "" . "</div>" . $lang["mission_description3"]; ?>
+            <br><br>
+            <?php echo "<div class= 'fw-bolder'>" . $lang["mission_description4_bold"] . "" . "</div>" . $lang["mission_description4"]; ?>
+            <br>
+        </p>
+    </div>
+
+    <div class="container bg-black text-center text-white">
+
+    </div>
     <?php include $_SERVER['DOCUMENT_ROOT'] . '\views\templates\footer.php'; ?>
 
 </body>

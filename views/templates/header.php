@@ -1,5 +1,7 @@
 <?php
 include $_SERVER['DOCUMENT_ROOT'] . "\backend\lang.php";
+$request = $_SERVER['REQUEST_URI'];
+
 ?>
 
 <head>

@@ -1,5 +1,7 @@
 <?php
 
+header('Location: /views/home.php');
+
 /*
 $request = $_SERVER['REQUEST_URI'];
 
